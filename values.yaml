@@ -10,13 +10,13 @@ jump-app-micros:
     namespace: istio-system
     mtls: true
   cicd:
-    namespace: <user_namespace_cicd>
+    namespace: user11-jump-app-cicd
   knative:
     enabled: false
 
 # Global variables
 global:
-  appsDomain: <openshift_apps_domain>
+  appsDomain: apps.cicdgitopsworkshop.sandbox507.opentlc.com
   apps:
     front-javascript:
       imagetag: develop
